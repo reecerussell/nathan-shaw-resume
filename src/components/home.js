@@ -5,26 +5,12 @@ import {
 	faInstagram,
 	faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import NavBar from "./navbar";
 
 const Home = () => (
 	<section id="home">
-		<nav className="navbar">
-			<ul>
-				<li>
-					<a href="#">About me</a>
-				</li>
-				<li>
-					<a href="#">Education</a>
-				</li>
-				<li>
-					<a href="#">Portfolio</a>
-				</li>
-				<li>
-					<a href="#">Contact</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="content">
+		<NavBar />
+		<div className="content">
 			<h1>NATHAN SHAW</h1>
 			<ul className="socials">
 				<li>
