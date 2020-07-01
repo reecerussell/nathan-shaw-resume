@@ -1,0 +1,45 @@
+{
+	"name": "nathanshaw",
+	"version": "1.0.0",
+	"description": "A portfolio/resume website for Nathan Shaw.",
+	"main": "index.js",
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/reecerussell/nathan-shaw-resume.git"
+	},
+	"author": "Reece Russell <me@reece-russell.co.uk>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/reecerussell/nathan-shaw-resume/issues"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.29",
+		"@fortawesome/free-brands-svg-icons": "^5.13.1",
+		"@fortawesome/free-solid-svg-icons": "^5.13.1",
+		"@fortawesome/react-fontawesome": "^0.1.11",
+		"react": "^16.13.1",
+		"react-app-polyfill": "^1.0.6",
+		"react-dom": "^16.13.1",
+		"react-router-dom": "^5.2.0"
+	},
+	"devDependencies": {
+		"node-sass": "^4.14.1",
+		"react-scripts": "^3.4.1"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

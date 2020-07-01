@@ -1,0 +1,48 @@
+$home-bg-sm: url("/assets/background_home_small.jpg");
+$home-bg-md: url("/assets/background_home_medium.jpg");
+$home-bg-lg: url("/assets/background_home_large.jpg");
+
+#home {
+	height: 100vh;
+	width: 100vw;
+	background-image: $home-bg-sm;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	position: relative;
+	padding: 30px;
+
+	> .content {
+		position: absolute;
+		bottom: 15%;
+
+		h1 {
+			font-family: $main-font;
+			color: $white;
+			font-size: 65px;
+			margin-bottom: 10px;
+			line-height: 65px;
+		}
+
+		ul.socials {
+			padding-left: 8px;
+		}
+	}
+}
+
+@media (min-width: 621px) {
+	#home {
+		background-image: $home-bg-md;
+
+		h1 {
+			font-size: 80px;
+			line-height: 80px;
+		}
+	}
+}
+
+@media (min-width: 1080px) {
+	#home {
+		background-image: $home-bg-lg;
+	}
+}

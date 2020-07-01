@@ -1,0 +1,44 @@
+ul.socials {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		display: inline-block;
+		margin-right: 15px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+
+		a {
+			display: block;
+			position: relative;
+
+			height: 45px;
+			width: 45px;
+			border-radius: 50%;
+			background-color: $white;
+
+			svg {
+				color: rgba(0, 0, 0, 0.8);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				&.instagram:hover {
+					color: $instagram-color;
+				}
+
+				&.twitter:hover {
+					color: $twitter-color;
+				}
+
+				&.facebook:hover {
+					color: $facebook-color;
+				}
+			}
+		}
+	}
+}
