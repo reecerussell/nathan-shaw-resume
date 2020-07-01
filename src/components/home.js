@@ -26,7 +26,7 @@ const Home = () => (
 		</nav>
 		<div class="content">
 			<h1>NATHAN SHAW</h1>
-			<ul>
+			<ul className="socials">
 				<li>
 					<a href="#" title="Instagram">
 						<FontAwesomeIcon
