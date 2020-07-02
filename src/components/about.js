@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./navbar";
 import Socials from "./socials";
 
-const About = () => (
+const About = ({ socials }) => (
 	<section id="about">
 		<NavBar />
 		<div class="content">
@@ -22,7 +22,7 @@ const About = () => (
 				Most of my projects and college work can be found in my
 				portfolio.
 			</p>
-			<Socials />
+			<Socials items={socials} />
 		</div>
 	</section>
 );
