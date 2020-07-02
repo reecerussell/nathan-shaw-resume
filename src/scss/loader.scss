@@ -20,7 +20,7 @@ body {
 }
 
 .text {
-	color: #fbae17;
+	color: $orange;
 	display: inline-block;
 	margin-left: 5px;
 	font-family: $main-font;
@@ -39,7 +39,7 @@ body {
 		width: $width;
 		height: $height;
 		border-radius: 50%;
-		background-color: #fbae17;
+		background-color: $orange;
 		transform-origin: 50%;
 		animation: bounce 500ms alternate infinite ease;
 	}
