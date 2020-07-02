@@ -3,8 +3,8 @@ $home-bg-md: url("/assets/background_home_medium.jpg");
 $home-bg-lg: url("/assets/background_home_large.jpg");
 
 #home {
-	height: 100vh;
-	width: 100vw;
+	height: calc(100vh - 60px);
+	width: calc(100vw - 60px);
 	background-image: $home-bg-sm;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -15,6 +15,7 @@ $home-bg-lg: url("/assets/background_home_large.jpg");
 	> .content {
 		position: absolute;
 		bottom: 15%;
+		width: calc(100vw - 60px);
 
 		h1 {
 			font-family: $main-font;

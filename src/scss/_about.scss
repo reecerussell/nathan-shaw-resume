@@ -1,0 +1,62 @@
+$about-bg-sm: url("/assets/background_about_small.jpg");
+$about-bg-md: url("/assets/background_about_medium.jpg");
+$about-bg-lg: url("/assets/background_about_large.jpg");
+
+#about {
+	min-height: calc(100vh - 60px);
+	width: calc(100vw - 60px);
+	background-image: $about-bg-sm;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	position: relative;
+	padding: 30px;
+
+	> .content {
+		width: calc(100vw - 60px);
+
+		h1 {
+			font-family: $main-font;
+			color: $white;
+			font-size: 65px;
+			margin-bottom: 10px;
+			line-height: 65px;
+			font-weight: 300;
+		}
+
+		p {
+			font-family: $main-font;
+			color: $white;
+			font-weight: 300;
+		}
+
+		ul.socials {
+			margin-top: 40px;
+		}
+	}
+}
+
+@media (min-width: 621px) {
+	#about {
+		background-image: $about-bg-md;
+
+		h1 {
+			font-size: 80px;
+			line-height: 80px;
+		}
+
+		> .content {
+			max-width: 50%;
+		}
+	}
+}
+
+@media (min-width: 1080px) {
+	#about {
+		background-image: $about-bg-lg;
+
+		> .content {
+			max-width: 40%;
+		}
+	}
+}
