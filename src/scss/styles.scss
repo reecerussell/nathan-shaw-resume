@@ -3,10 +3,11 @@
 @import "nav";
 @import "socials";
 @import "home";
+@import "about";
 
 html,
 body {
 	padding: 0;
 	margin: 0;
-	overflow: hidden;
+	overflow-x: hidden;
 }
