@@ -2,9 +2,9 @@ import React from "react";
 import NavBar from "./navbar";
 import Socials from "./socials";
 
-const About = ({ socials }) => (
+const About = ({ socials, navigation }) => (
 	<section id="about">
-		<NavBar />
+		<NavBar items={navigation} />
 		<div class="content">
 			<h1>Hi,</h1>
 			<p>

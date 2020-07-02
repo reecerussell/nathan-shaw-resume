@@ -1,23 +1,40 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-const NavBar = () => (
-	<nav className="navbar">
-		<ul>
-			<li>
-				<Link to="/about">About me</Link>
+const NavBar = ({ items }) => {
+	const { pathname } = useLocation();
+
+	const render = (item, key) => {
+		const link = item.link || "/";
+		if (link === pathname) {
+			return null;
+		}
+
+		const target = item.target || "_self";
+		if (/^https?:\/\//i.test(link)) {
+			return (
+				<li key={key}>
+					<a href={link} target={target}>
+						{item.text}
+					</a>
+				</li>
+			);
+		}
+
+		return (
+			<li key={key}>
+				<Link to={link} target={target} key={key}>
+					{item.text}
+				</Link>
 			</li>
-			<li>
-				<Link to="/education">Education</Link>
-			</li>
-			<li>
-				<Link to="/portfolio">Portfolio</Link>
-			</li>
-			<li>
-				<Link to="/contact">Contact</Link>
-			</li>
-		</ul>
-	</nav>
-);
+		);
+	};
+
+	return (
+		<nav className="navbar">
+			<ul>{items.map(render)}</ul>
+		</nav>
+	);
+};
 
 export default NavBar;
